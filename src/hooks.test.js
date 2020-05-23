@@ -1,6 +1,6 @@
 import { renderHook } from '@testing-library/react-hooks'
-import { useToken, usePlanets } from './hooks';
-import { fetchToken, fetchPlanets } from './services';
+import { useToken, usePlanets, useVehicles } from './hooks';
+import { fetchToken, fetchPlanets, fetchVehicles } from './services';
 jest.mock('./services')
 
 describe('useToken', () => {
@@ -56,5 +56,28 @@ describe('usePlanets', () => {
         rerender()
         expect(result.current).toBe(planets)
         expect(fetchPlanets).toHaveBeenCalledTimes(1)
+    });
+});
+
+describe('useVehicles', () => {
+    let vehicles = [{ name: 'Vehicles 1' }, { name: 'Vehicles 2' }, { name: 'Vehicles 3' }];
+    beforeEach(() => {
+        fetchVehicles.mockResolvedValue(vehicles)
+    })
+    afterEach(() => {
+        fetchVehicles.mockClear()
+    })
+    test('should fetch vehicles details', async () => {
+        const { result, waitForNextUpdate } = renderHook(() => useVehicles());
+        await waitForNextUpdate();
+        expect(result.current).toBe(vehicles)
+    });
+    test('should fetch planets details only once', async () => {
+        const { result, waitForNextUpdate, rerender } = renderHook(() => useVehicles());
+        await waitForNextUpdate();
+        expect(result.current).toBe(vehicles)
+        rerender()
+        expect(result.current).toBe(vehicles)
+        expect(fetchVehicles).toHaveBeenCalledTimes(1)
     });
 });

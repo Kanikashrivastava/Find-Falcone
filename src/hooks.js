@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { fetchToken, fetchPlanets } from "./services"
+import { fetchToken, fetchPlanets, fetchVehicles } from "./services"
 
 export const useToken = () => {
     const [token, setToken] = useState('')
@@ -17,4 +17,12 @@ export const usePlanets = () => {
             .then((response) => setPlanets(response))
     }, [])
     return planets
+}
+
+export const useVehicles = () => {
+    const [vehicles, setVehicles] = useState([]);
+    useEffect(() => {
+        fetchVehicles().then(response => setVehicles(response))
+    }, [])
+    return vehicles;
 }
