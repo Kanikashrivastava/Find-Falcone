@@ -1,17 +1,12 @@
 import React from 'react';
 import { DestinationVehicleBook } from './Planet'
-import { useToken, usePlanets } from './hooks';
+import { useToken, usePlanets, useVehicles } from './hooks';
 
 
 function App() {
   const token = useToken();
   const planets = usePlanets();
-  const vehicles = [
-    { name: 'Vehicles 1', total_no: 1 }, 
-    { name: 'Vehicles 2', total_no: 2 }, 
-    { name: 'Vehicles 3', total_no: 1 }, 
-    { name: 'Vehicles 4', total_no: 1 }
-  ];
+  const vehicles = useVehicles();
   return (
     <div className="App">
       <header className="App-header">

@@ -2,7 +2,7 @@ import React from 'react';
 import { render, waitForDomChange } from '@testing-library/react';
 import user from '@testing-library/user-event';
 import App from './App';
-import { fetchPlanets, fetchToken } from './services'
+import { fetchPlanets, fetchToken, fetchVehicles } from './services'
 
 jest.mock('./services.js')
 
@@ -17,12 +17,20 @@ describe('<App />', () => {
       { name: 'Planet 3' }, 
       { name: 'Planet 4' }
     ]
+    const vehicles = [
+      { name: 'Vehicles 1' }, 
+      { name: 'Vehicles 2' }, 
+      { name: 'Vehicles 3' }, 
+      { name: 'Vehicles 4' }
+    ]
     fetchToken.mockResolvedValue({ token })
     fetchPlanets.mockResolvedValue(planets)
+    fetchVehicles.mockResolvedValue(vehicles)
   })
   afterEach(() => {
     fetchToken.mockClear();
     fetchPlanets.mockClear();
+    fetchVehicles.mockClear();
   })
   test('should show the planets select in the UI', async () => {
     const { asFragment, getAllByTestId } = render(<App />);
