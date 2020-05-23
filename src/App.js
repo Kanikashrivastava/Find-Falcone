@@ -1,22 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { DestinationVehicleBook } from './components/Planet'
-import { fetchToken } from './services';
-const useToken = () => {
-  const [token, setToken] = useState('');
-  useEffect(() => {
-    fetchToken().then((resp) => setToken(resp.token))
-  }, [])
-  return token;
-}
+import React from 'react';
+import { DestinationVehicleBook } from './Planet'
+import { useToken, usePlanets } from './hooks';
+
 
 function App() {
   const token = useToken();
-  const planets = [
-    { name: 'Planet 1' }, 
-    { name: 'Planet 2' }, 
-    { name: 'Planet 3' }, 
-    { name: 'Planet 4' }
-  ];
+  const planets = usePlanets();
   const vehicles = [
     { name: 'Vehicles 1', total_no: 1 }, 
     { name: 'Vehicles 2', total_no: 2 }, 

@@ -1,7 +1,6 @@
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
 const makeCall = (url, option) => {
-    console.log(`${BACKEND_URL}${url}`)
     return fetch(`${BACKEND_URL}${url}`, option).then((response) => response.json())
 }
 const httpService = {
@@ -36,5 +35,5 @@ export const fetchVehicles = () => {
 
 }
 export const fetchPlanets = () => {
-
+    return httpService.get('/planets');
 }

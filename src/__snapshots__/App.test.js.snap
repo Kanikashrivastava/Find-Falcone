@@ -24,26 +24,31 @@ exports[`renders learn react link 1`] = `
         id="planet-select"
       >
         <option
+          data-testid="default"
           value="default"
         >
           Select Planet
         </option>
         <option
+          data-testid="Planet 1"
           value="Planet 1"
         >
           Planet 1
         </option>
         <option
+          data-testid="Planet 2"
           value="Planet 2"
         >
           Planet 2
         </option>
         <option
+          data-testid="Planet 3"
           value="Planet 3"
         >
           Planet 3
         </option>
         <option
+          data-testid="Planet 4"
           value="Planet 4"
         >
           Planet 4
@@ -64,26 +69,31 @@ exports[`renders learn react link 1`] = `
         id="planet-select"
       >
         <option
+          data-testid="default"
           value="default"
         >
           Select Planet
         </option>
         <option
+          data-testid="Planet 1"
           value="Planet 1"
         >
           Planet 1
         </option>
         <option
+          data-testid="Planet 2"
           value="Planet 2"
         >
           Planet 2
         </option>
         <option
+          data-testid="Planet 3"
           value="Planet 3"
         >
           Planet 3
         </option>
         <option
+          data-testid="Planet 4"
           value="Planet 4"
         >
           Planet 4
@@ -104,26 +114,31 @@ exports[`renders learn react link 1`] = `
         id="planet-select"
       >
         <option
+          data-testid="default"
           value="default"
         >
           Select Planet
         </option>
         <option
+          data-testid="Planet 1"
           value="Planet 1"
         >
           Planet 1
         </option>
         <option
+          data-testid="Planet 2"
           value="Planet 2"
         >
           Planet 2
         </option>
         <option
+          data-testid="Planet 3"
           value="Planet 3"
         >
           Planet 3
         </option>
         <option
+          data-testid="Planet 4"
           value="Planet 4"
         >
           Planet 4
@@ -144,26 +159,31 @@ exports[`renders learn react link 1`] = `
         id="planet-select"
       >
         <option
+          data-testid="default"
           value="default"
         >
           Select Planet
         </option>
         <option
+          data-testid="Planet 1"
           value="Planet 1"
         >
           Planet 1
         </option>
         <option
+          data-testid="Planet 2"
           value="Planet 2"
         >
           Planet 2
         </option>
         <option
+          data-testid="Planet 3"
           value="Planet 3"
         >
           Planet 3
         </option>
         <option
+          data-testid="Planet 4"
           value="Planet 4"
         >
           Planet 4
