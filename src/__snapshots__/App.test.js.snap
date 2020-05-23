@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <header
+      class="App-header"
+    >
+      Find Falcone
+    </header>
+    <div
+      class="MuiFormControl-root makeStyles-formControl-1"
+    >
+      <label
+        id="demo-simple-select-label"
+      >
+        Destination 1
+      </label>
+      <select
+        class="makeStyles-select-3"
+        data-testid="planet-select"
+        id="planet-select"
+      >
+        <option
+          value="default"
+        >
+          Select Planet
+        </option>
+        <option
+          value="Planet 1"
+        >
+          Planet 1
+        </option>
+        <option
+          value="Planet 2"
+        >
+          Planet 2
+        </option>
+        <option
+          value="Planet 3"
+        >
+          Planet 3
+        </option>
+        <option
+          value="Planet 4"
+        >
+          Planet 4
+        </option>
+      </select>
+    </div>
+    <div
+      class="MuiFormControl-root makeStyles-formControl-1"
+    >
+      <label
+        id="demo-simple-select-label"
+      >
+        Destination 2
+      </label>
+      <select
+        class="makeStyles-select-3"
+        data-testid="planet-select"
+        id="planet-select"
+      >
+        <option
+          value="default"
+        >
+          Select Planet
+        </option>
+        <option
+          value="Planet 1"
+        >
+          Planet 1
+        </option>
+        <option
+          value="Planet 2"
+        >
+          Planet 2
+        </option>
+        <option
+          value="Planet 3"
+        >
+          Planet 3
+        </option>
+        <option
+          value="Planet 4"
+        >
+          Planet 4
+        </option>
+      </select>
+    </div>
+    <div
+      class="MuiFormControl-root makeStyles-formControl-1"
+    >
+      <label
+        id="demo-simple-select-label"
+      >
+        Destination 3
+      </label>
+      <select
+        class="makeStyles-select-3"
+        data-testid="planet-select"
+        id="planet-select"
+      >
+        <option
+          value="default"
+        >
+          Select Planet
+        </option>
+        <option
+          value="Planet 1"
+        >
+          Planet 1
+        </option>
+        <option
+          value="Planet 2"
+        >
+          Planet 2
+        </option>
+        <option
+          value="Planet 3"
+        >
+          Planet 3
+        </option>
+        <option
+          value="Planet 4"
+        >
+          Planet 4
+        </option>
+      </select>
+    </div>
+    <div
+      class="MuiFormControl-root makeStyles-formControl-1"
+    >
+      <label
+        id="demo-simple-select-label"
+      >
+        Destination 4
+      </label>
+      <select
+        class="makeStyles-select-3"
+        data-testid="planet-select"
+        id="planet-select"
+      >
+        <option
+          value="default"
+        >
+          Select Planet
+        </option>
+        <option
+          value="Planet 1"
+        >
+          Planet 1
+        </option>
+        <option
+          value="Planet 2"
+        >
+          Planet 2
+        </option>
+        <option
+          value="Planet 3"
+        >
+          Planet 3
+        </option>
+        <option
+          value="Planet 4"
+        >
+          Planet 4
+        </option>
+      </select>
+    </div>
+  </div>
+</DocumentFragment>
+`;
