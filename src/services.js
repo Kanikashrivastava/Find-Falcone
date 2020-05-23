@@ -7,7 +7,7 @@ export const findFalacon = () => {
 
 }
 export const fetchVehicles = () => {
-
+    return httpService.get('/vehicles')
 }
 export const fetchPlanets = () => {
     return httpService.get('/planets');

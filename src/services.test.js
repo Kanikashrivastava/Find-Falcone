@@ -1,5 +1,5 @@
 import { httpService } from "./httpService";
-import { fetchToken, fetchPlanets } from "./services";
+import { fetchToken, fetchPlanets, fetchVehicles } from "./services";
 
 jest.mock('./httpService')
 
@@ -12,8 +12,13 @@ describe('Services', () => {
         await fetchToken()
         expect(httpService.post).toHaveBeenNthCalledWith(1, '/token')        
     });
-    test('should call httpService with "/token" post', async () => {
+    test('should call httpService with "/planets" post', async () => {
         await fetchPlanets()
-        expect(httpService.post).toHaveBeenNthCalledWith(1, '/planets')        
+        expect(httpService.get).toHaveBeenNthCalledWith(1, '/planets')        
+    });
+
+    test('should call httpService with "/vehicles" post', async () => {
+        await fetchVehicles()
+        expect(httpService.get).toHaveBeenNthCalledWith(1, '/vehicles')        
     });
 });
