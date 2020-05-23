@@ -18,6 +18,6 @@ test('renders planets options', async () => {
     const utils = render(<DestinationVehicleBook {...props} />);
     const { asFragment } = utils
     user.click(screen.getByTestId("planet-select"))
-    user.click(screen.getByTestId(/Planet 1/))
+    user.selectOptions(screen.getByTestId(/planet-select/), [props.planets[0].name])
     expect(asFragment()).toMatchSnapshot()
 });

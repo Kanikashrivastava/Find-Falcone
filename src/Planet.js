@@ -34,12 +34,12 @@ export function DestinationVehicleBook({ optionNum, planets, vehicles }) {
           id="planet-select"
           data-testId="planet-select"
           className={classes.select}
+          onChange={(e) => setSelectedPlanet(e.target.value)}
         >
           {[{name: "default", distance: 0}, ...planets].map((planet) => {
             return (
               <option
                 data-testId={planet.name}
-                onClick={(e) => setSelectedPlanet(planet.name)}
                 value={planet.name}
                 selected={selectedPlanet === planet.name}
               >
