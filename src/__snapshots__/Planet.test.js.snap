@@ -45,6 +45,7 @@ exports[`renders planets options 1`] = `
         <span
           aria-disabled="false"
           class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-21 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+          data-testid="Vehicles 1"
         >
           <span
             class="MuiIconButton-label"
@@ -96,6 +97,7 @@ exports[`renders planets options 1`] = `
         <span
           aria-disabled="false"
           class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-21 MuiRadio-root MuiRadio-colorSecondary MuiIconButton-colorSecondary"
+          data-testid="Vehicles 2"
         >
           <span
             class="MuiIconButton-label"
