@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import FormControl from "@material-ui/core/FormControl";
 import Radio from "@material-ui/core/Radio";
@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 export function DestinationVehicleBook({ optionNum, planets, vehicles, handlePlanetChange, handleVehicleChange }) {
   const classes = useStyles();
   const [selectedPlanet, setSelectedPlanet] = useState("default");
-  const [selectedVechile, setSelectedVechile] = useState("default");
+  const [selectedVehicle, setselectedVehicle] = useState("default");
   const isPlanetSelected = () => {
     return selectedPlanet && selectedPlanet !== "default";
   };
@@ -33,7 +33,7 @@ export function DestinationVehicleBook({ optionNum, planets, vehicles, handlePla
   }
   const onVehicleChange = (e) => {
     const { value } = e.target;
-    setSelectedVechile(value)
+    setselectedVehicle(value)
     handleVehicleChange(value);
   }
   return (
@@ -62,7 +62,7 @@ export function DestinationVehicleBook({ optionNum, planets, vehicles, handlePla
           <RadioGroup
             aria-label="vehicles"
             name="vehicles"
-            value={selectedVechile}
+            value={selectedVehicle}
             onChange={onVehicleChange}
           >
             {vehicles.map((vehicle) => {

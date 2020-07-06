@@ -16,7 +16,7 @@ export const httpService = {
     post: (url, options = {}) => makeCall(url, {
         ...options,
         method: 'POST',
-        body: options.payload,
+        body: JSON.stringify(options.payload),
         headers: {
             ...options.headers,
             'Accept': 'application/json',
